@@ -58,6 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.collect do |s, v|
     season = s.to_s.capitalize
+    puts season.chomp
     v.collect do |k, x|
       a = k.to_s
       b = a.split("_")
