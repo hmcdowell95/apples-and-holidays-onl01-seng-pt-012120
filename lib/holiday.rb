@@ -62,6 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     v.collect do |k, x|
       a = k.to_s
       b = a.split("_")
+      z = []
       b.each do |y|
         z << y.capitalize
       end
