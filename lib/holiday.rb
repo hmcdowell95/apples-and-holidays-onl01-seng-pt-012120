@@ -39,13 +39,7 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash.collect do |k, v|
     if k == season
-      v.collect do |x, y|
-        [x] << holiday_name
-        if x.include?(holiday_name)
-          break
-        end
-      end
-      holiday_hash[season][holiday_name] << supply_array
+      v << {holiday_name => supply_array}
     end
   end
 end
