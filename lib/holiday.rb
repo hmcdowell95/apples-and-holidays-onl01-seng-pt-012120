@@ -61,8 +61,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season}:"
     v.collect do |k, x|
       a = k.to_s.capitalize
-      x.join(" ")
-      binding.pry
+      b = x.join(", ")
+      puts "#{a}: #{b}"
     end
   end
 end
