@@ -60,9 +60,12 @@ def all_supplies_in_holidays(holiday_hash)
     season = s.to_s.capitalize
     v.collect do |k, x|
       a = k.to_s
-      a.split("_")
-      binding.pry
-      b = x.join(", ")
+      b = a.split("_")
+      b.collect do |y|
+        y.capitalize
+      end
+      b.join
+       = x.join(", ")
     end
   end
 end
