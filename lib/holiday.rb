@@ -56,7 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.collect do |s|
+  holiday_hash.collect do |s, v|
     s.to_s
     binding.pry
     s.collect do |k|
