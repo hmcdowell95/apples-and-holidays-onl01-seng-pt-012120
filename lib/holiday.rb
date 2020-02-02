@@ -37,10 +37,10 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  holiday_hash.collect do |k, v|
+  holiday_hash.each do |k, v|
     if k == season
-      binding.pry
-      holiday_hash[k][holiday_name => supply_array]
+      a = holiday_hash[k] << holiday_name
+      b = a[k][holiday_name] << supply_array
     end
   end
 end
