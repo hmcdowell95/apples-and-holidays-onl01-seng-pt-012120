@@ -65,8 +65,9 @@ def all_supplies_in_holidays(holiday_hash)
       b.collect do |y|
         y.capitalize
       end
-      b.join(" ")
-      x.join(", ")
+      c = b.join(" ")
+      d = x.join(", ")
+      puts "  #{c}: #{d}"
     end
   end
 end
