@@ -59,7 +59,6 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.collect do |s, v|
     s.to_s.capitalize
     v.collect do |k, x|
-      a = k.join
       binding.pry
     end
   end
