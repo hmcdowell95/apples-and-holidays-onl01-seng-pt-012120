@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       c = b.join(" ")
       d = x.join(", ")
-      puts "  #{c}: #{d}"
+      puts "  #{c}: #{d}".chomp
     end
   end
 end
