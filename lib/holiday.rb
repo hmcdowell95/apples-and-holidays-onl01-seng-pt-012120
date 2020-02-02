@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     v.collect do |k, x|
       a = k.to_s.capitalize
       b = x.join(", ")
-      puts "#{a}: #{b}"
+      puts "  #{a}: #{b}"
     end
   end
 end
