@@ -79,7 +79,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |k, v|
     v.each do |x, y|
       if y.include?("BBQ")
-        puts x
+        return x
       end
     end
   end
